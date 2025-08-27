@@ -427,6 +427,26 @@ h1, h2, h3 {
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
 }
 
+/* Video loading optimization */
+.video-fade-in {
+  transition: opacity 1s ease-in-out;
+}
+
+.video-fade-in.loaded {
+  opacity: 1 !important;
+}
+
+/* Performance optimizations for images */
+img {
+  loading: lazy;
+  decoding: async;
+}
+
+/* Critical images should load immediately */
+.hero-bg, .logo-img {
+  loading: eager !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .download-card {
@@ -455,5 +475,64 @@ h1, h2, h3 {
 
   .wim-gallery img:only-child {
     height: 250px;
+  }
+
+  /* Mobile/tablet specific optimizations */
+  video {
+    object-position: center;
+  }
+}
+
+/* iPad specific optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* iPad portrait and landscape */
+  .wim-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .wim-gallery img {
+    height: 220px;
+  }
+
+  /* Hero section adjustments for iPad */
+  #hero {
+    min-height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.25rem;
+    max-width: 90%;
+  }
+
+  /* Statistics cards for iPad */
+  .card-hover {
+    padding: 1.5rem;
+  }
+}
+
+/* High DPI displays optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optimize for retina displays */
+  .wim-gallery img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-bounce,
+  .animate-fade-in,
+  .animate-counter,
+  .card-hover,
+  video {
+    animation: none !important;
+    transition: none !important;
   }
 }

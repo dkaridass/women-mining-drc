@@ -18,11 +18,13 @@ export default function Navigation() {
         <div className="flex justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img
-              src="/attached_assets/wimdrc-logo.png"
-              alt="WIM DRC Logo"
-              className="h-16 w-auto"
-            />
+                            <img
+                  src="/attached_assets/wimdrc-logo.png"
+                  alt="WIM DRC Logo"
+                  className="h-16 w-auto logo-img"
+                  loading="eager"
+                  decoding="async"
+                />
             <span className="ml-3 text-xl font-bold text-gray-900">WIM DRC</span>
           </div>
 

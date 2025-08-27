@@ -3,33 +3,33 @@ import { Group, BookOpen, MapPin, Network } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Videos */}
+      {/* Background with optimized loading */}
       <div className="absolute inset-0 z-0">
-        <picture>
-          {/* Desktop: Two videos side by side */}
-          <source
-            media="(min-width: 768px)"
-            srcSet="/attached_assets/women-mining-bg-1.mp4"
-          />
-          {/* Mobile: Single video */}
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            poster="/attached_assets/women-mining-leadership.jpg"
-          >
-            <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
-            <source src="/attached_assets/women-mining-bg-2.mp4" type="video/mp4" />
-            {/* Fallback image */}
-            <img
-              src="/attached_assets/women-mining-leadership.jpg"
-              alt="Women in Mining DRC"
-              className="w-full h-full object-cover"
-            />
-          </video>
-        </picture>
+        {/* Static background image for immediate loading */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/attached_assets/women-mining-leadership.jpg)'
+          }}
+        ></div>
+        
+        {/* Video overlay for desktop/tablet - loads after image */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover opacity-0 video-fade-in"
+          poster="/attached_assets/women-mining-leadership.jpg"
+          onLoadedData={(e) => {
+            const video = e.target as HTMLVideoElement;
+            video.classList.add('loaded');
+          }}
+        >
+          <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
+          {/* Fallback to static image */}
+        </video>
 
         {/* Enhanced gradient overlay */}
         <div className="absolute inset-0 hero-gradient"></div>
@@ -63,31 +63,31 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Enhanced Statistics Cards with Icons */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
-              <Group className="w-12 h-12 mx-auto mb-4 text-yellow-400 animate-float" />
-              <div className="text-4xl font-bold mb-2 text-yellow-400 animate-counter">1000+</div>
-              <div className="text-lg font-medium">Femmes autonomisées</div>
-              <div className="text-sm text-white/80 mt-2">Depuis 2018</div>
+          {/* Enhanced Statistics Cards with Icons - Responsive */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto">
+            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
+              <Group className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-yellow-400 animate-float" />
+              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-yellow-400 animate-counter">1000+</div>
+              <div className="text-sm md:text-lg font-medium">Femmes autonomisées</div>
+              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Depuis 2018</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
-              <BookOpen className="w-12 h-12 mx-auto mb-4 text-blue-400 animate-float" style={{animationDelay: '0.5s'}} />
-              <div className="text-4xl font-bold mb-2 text-blue-400 animate-counter" style={{animationDelay: '0.2s'}}>25</div>
-              <div className="text-lg font-medium">Programmes actifs</div>
-              <div className="text-sm text-white/80 mt-2">Formation & Leadership</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
+              <BookOpen className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-blue-400 animate-float" style={{animationDelay: '0.5s'}} />
+              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-blue-400 animate-counter" style={{animationDelay: '0.2s'}}>25</div>
+              <div className="text-sm md:text-lg font-medium">Programmes actifs</div>
+              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Formation & Leadership</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
-              <MapPin className="w-12 h-12 mx-auto mb-4 text-green-400 animate-float" style={{animationDelay: '1s'}} />
-              <div className="text-4xl font-bold mb-2 text-green-400 animate-counter" style={{animationDelay: '0.4s'}}>12</div>
-              <div className="text-lg font-medium">Provinces couvertes</div>
-              <div className="text-sm text-white/80 mt-2">Présence nationale</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
+              <MapPin className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-green-400 animate-float" style={{animationDelay: '1s'}} />
+              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-green-400 animate-counter" style={{animationDelay: '0.4s'}}>12</div>
+              <div className="text-sm md:text-lg font-medium">Provinces couvertes</div>
+              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Présence nationale</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
-              <Network className="w-12 h-12 mx-auto mb-4 text-purple-400 animate-float" style={{animationDelay: '1.5s'}} />
-              <div className="text-4xl font-bold mb-2 text-purple-400 animate-counter" style={{animationDelay: '0.6s'}}>5</div>
-              <div className="text-lg font-medium">Partenariats internationaux</div>
-              <div className="text-sm text-white/80 mt-2">Réseau WIM Global</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
+              <Network className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-purple-400 animate-float" style={{animationDelay: '1.5s'}} />
+              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-purple-400 animate-counter" style={{animationDelay: '0.6s'}}>5</div>
+              <div className="text-sm md:text-lg font-medium">Partenariats internationaux</div>
+              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Réseau WIM Global</div>
             </div>
           </div>
         </div>
