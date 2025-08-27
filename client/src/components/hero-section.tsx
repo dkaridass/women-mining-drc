@@ -31,8 +31,8 @@ export default function HeroSection() {
           </video>
         </picture>
 
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        {/* Enhanced gradient overlay */}
+        <div className="absolute inset-0 hero-gradient"></div>
       </div>
 
       {/* Content */}
@@ -63,27 +63,31 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Statistics Cards with Icons */}
+          {/* Enhanced Statistics Cards with Icons */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
-              <Group className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
-              <div className="text-4xl font-bold mb-2 text-yellow-400">500+</div>
-              <div className="text-lg font-medium">Femmes formées</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
+              <Group className="w-12 h-12 mx-auto mb-4 text-yellow-400 animate-float" />
+              <div className="text-4xl font-bold mb-2 text-yellow-400 animate-counter">1000+</div>
+              <div className="text-lg font-medium">Femmes autonomisées</div>
+              <div className="text-sm text-white/80 mt-2">Depuis 2018</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
-              <BookOpen className="w-12 h-12 mx-auto mb-4 text-blue-400" />
-              <div className="text-4xl font-bold mb-2 text-blue-400">15</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
+              <BookOpen className="w-12 h-12 mx-auto mb-4 text-blue-400 animate-float" style={{animationDelay: '0.5s'}} />
+              <div className="text-4xl font-bold mb-2 text-blue-400 animate-counter" style={{animationDelay: '0.2s'}}>25</div>
               <div className="text-lg font-medium">Programmes actifs</div>
+              <div className="text-sm text-white/80 mt-2">Formation & Leadership</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
-              <MapPin className="w-12 h-12 mx-auto mb-4 text-green-400" />
-              <div className="text-4xl font-bold mb-2 text-green-400">8</div>
-              <div className="text-lg font-medium">Provinces clés</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
+              <MapPin className="w-12 h-12 mx-auto mb-4 text-green-400 animate-float" style={{animationDelay: '1s'}} />
+              <div className="text-4xl font-bold mb-2 text-green-400 animate-counter" style={{animationDelay: '0.4s'}}>12</div>
+              <div className="text-lg font-medium">Provinces couvertes</div>
+              <div className="text-sm text-white/80 mt-2">Présence nationale</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
-              <Network className="w-12 h-12 mx-auto mb-4 text-purple-400" />
-              <div className="text-4xl font-bold mb-2 text-purple-400">1</div>
-              <div className="text-lg font-medium">Réseau international</div>
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-8 text-center card-hover shadow-2xl border border-white/20">
+              <Network className="w-12 h-12 mx-auto mb-4 text-purple-400 animate-float" style={{animationDelay: '1.5s'}} />
+              <div className="text-4xl font-bold mb-2 text-purple-400 animate-counter" style={{animationDelay: '0.6s'}}>5</div>
+              <div className="text-lg font-medium">Partenariats internationaux</div>
+              <div className="text-sm text-white/80 mt-2">Réseau WIM Global</div>
             </div>
           </div>
         </div>

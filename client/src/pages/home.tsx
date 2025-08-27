@@ -144,9 +144,9 @@ export default function HomePage() {
                   Programmes de formation spécialisés en techniques minières, sécurité, 
                   et utilisation d'équipements modernes.
                 </p>
-                <button className="text-blue-600 font-medium hover:text-blue-800">
+                <a href="/programmes/formation-technique" className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
                   En savoir plus →
-                </button>
+                </a>
               </div>
 
               <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
@@ -160,9 +160,9 @@ export default function HomePage() {
                   Développement des compétences en leadership pour permettre aux femmes 
                   d'occuper des postes de responsabilité.
                 </p>
-                <button className="text-green-600 font-medium hover:text-green-800">
+                <a href="/programmes/leadership" className="text-green-600 font-medium hover:text-green-800 transition-colors">
                   En savoir plus →
-                </button>
+                </a>
               </div>
 
               <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
@@ -176,15 +176,306 @@ export default function HomePage() {
                   Accompagnement dans la création et la gestion de coopératives 
                   et d'entreprises minières dirigées par des femmes.
                 </p>
-                <button className="text-purple-600 font-medium hover:text-purple-800">
+                <a href="/programmes/entrepreneuriat" className="text-purple-600 font-medium hover:text-purple-800 transition-colors">
                   En savoir plus →
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         <NewsSection />
+
+        {/* Events Section */}
+        <section id="events" className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Événements à venir
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Participez à nos événements et formations pour développer vos compétences 
+                et élargir votre réseau professionnel.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Assemblée Générale
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-blue-600">15</div>
+                    <div className="text-sm text-gray-600">DÉC 2025</div>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Assemblée Générale Annuelle WIM DRC 2025
+                </h3>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    09:00
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    </svg>
+                    Hôtel Karavia, Lubumbashi
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Assemblée générale annuelle pour faire le bilan des activités 2025 
+                  et planifier les objectifs 2026.
+                </p>
+                <button className="btn-mining px-6 py-2 rounded-lg font-medium">
+                  S'inscrire
+                </button>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Formation
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-green-600">20</div>
+                    <div className="text-sm text-gray-600">NOV 2025</div>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Formation en Leadership Féminin
+                </h3>
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    08:30
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    </svg>
+                    Centre de Formation WIM DRC, Kolwezi
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-6">
+                  Formation intensive de 3 jours sur le leadership féminin dans le secteur minier.
+                </p>
+                <button className="bg-green-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors">
+                  S'inscrire
+                </button>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <button className="bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+                Voir tous les événements
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Resources Section */}
+        <section id="resources" className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Ressources et Documentation
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Accédez à notre bibliothèque de ressources pour approfondir vos connaissances 
+                du secteur minier et des opportunités pour les femmes.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Guides Techniques</h3>
+                <p className="text-gray-600 mb-6">
+                  Manuels et guides pratiques sur les techniques d'extraction, 
+                  la sécurité minière et l'utilisation d'équipements.
+                </p>
+                <div className="space-y-2">
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Guide de sécurité minière (PDF)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Manuel d'extraction artisanale (PDF)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Équipements de protection (PDF)
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Études et Rapports</h3>
+                <p className="text-gray-600 mb-6">
+                  Recherches approfondies sur la situation des femmes dans le secteur 
+                  minier et l'impact de nos interventions.
+                </p>
+                <div className="space-y-2">
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Rapport annuel 2024 (PDF)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Étude d'impact social (PDF)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Analyse du secteur minier (PDF)
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Formations en Ligne</h3>
+                <p className="text-gray-600 mb-6">
+                  Modules de formation accessibles à distance pour développer 
+                  vos compétences à votre rythme.
+                </p>
+                <div className="space-y-2">
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Module Leadership (Vidéo)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Gestion de coopérative (Vidéo)
+                  </a>
+                  <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+                    → Entrepreneuriat féminin (Vidéo)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Advocacy Section */}
+        <section id="advocacy" className="py-20 bg-gradient-to-br from-orange-500 to-yellow-600 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">
+                Plaidoyer et Politique
+              </h2>
+              <p className="text-xl text-orange-100 max-w-3xl mx-auto">
+                Nous œuvrons pour influencer les politiques publiques et créer 
+                un environnement plus favorable aux femmes dans le secteur minier.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Nos Priorités de Plaidoyer</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-orange-600 font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Égalité des Chances</h4>
+                      <p className="text-orange-100">
+                        Promouvoir l'égalité d'accès aux opportunités d'emploi et de formation 
+                        dans tous les niveaux de l'industrie minière.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-orange-600 font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Sécurité au Travail</h4>
+                      <p className="text-orange-100">
+                        Renforcer les normes de sécurité spécifiques aux femmes travaillant 
+                        dans les sites miniers.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-4 mt-1">
+                      <span className="text-orange-600 font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Participation Décisionnelle</h4>
+                      <p className="text-orange-100">
+                        Augmenter la représentation des femmes dans les organes de décision 
+                        des entreprises et coopératives minières.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Réalisations Récentes</h3>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <h4 className="font-semibold mb-1">Loi sur l'Égalité Minière</h4>
+                      <p className="text-sm text-orange-100">
+                        Contribution à la révision du code minier pour inclure des dispositions 
+                        favorables à l'emploi féminin.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <h4 className="font-semibold mb-1">Partenariat Gouvernemental</h4>
+                      <p className="text-sm text-orange-100">
+                        Signature d'un protocole d'accord avec le Ministère des Mines pour 
+                        la promotion de l'entrepreneuriat féminin.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <h4 className="font-semibold mb-1">Campagne de Sensibilisation</h4>
+                      <p className="text-sm text-orange-100">
+                        Lancement de la campagne nationale "Femmes Mines Avenir" touchant 
+                        plus de 10,000 personnes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-2xl font-bold mb-4">Rejoignez Notre Mouvement</h3>
+              <p className="text-orange-100 mb-8 max-w-2xl mx-auto">
+                Ensemble, nous pouvons transformer le secteur minier pour qu'il soit 
+                plus inclusif et bénéfique pour toutes les femmes de la RDC.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                  Devenir Membre
+                </button>
+                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors">
+                  Soutenir Nos Actions
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Contact Preview */}
         <section id="contact" className="py-20 bg-blue-900 text-white">
@@ -212,6 +503,12 @@ export default function HomePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     <span>contact@wim-drc.com</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>+243 991 900 624</span>
                   </div>
                   <div className="flex items-center">
                     <svg className="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
