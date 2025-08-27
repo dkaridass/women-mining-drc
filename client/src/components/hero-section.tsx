@@ -1,0 +1,100 @@
+import { Group, BookOpen, MapPin, Network } from 'lucide-react';
+
+export default function HeroSection() {
+  return (
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Videos */}
+      <div className="absolute inset-0 z-0">
+        <picture>
+          {/* Desktop: Two videos side by side */}
+          <source
+            media="(min-width: 768px)"
+            srcSet="/attached_assets/women-mining-bg-1.mp4"
+          />
+          {/* Mobile: Single video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            poster="/attached_assets/women-mining-leadership.jpg"
+          >
+            <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
+            <source src="/attached_assets/women-mining-bg-2.mp4" type="video/mp4" />
+            {/* Fallback image */}
+            <img
+              src="/attached_assets/women-mining-leadership.jpg"
+              alt="Women in Mining DRC"
+              className="w-full h-full object-cover"
+            />
+          </video>
+        </picture>
+
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="animate-fade-in">
+          <div className="flex justify-center items-center mb-6">
+            <Group className="w-8 h-8 mr-3 text-yellow-400" />
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Women in Mining DRC
+            </h1>
+            <Network className="w-8 h-8 ml-3 text-yellow-400" />
+          </div>
+          
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
+            Autonomiser les femmes dans le secteur minier de la République Démocratique du Congo
+            pour un développement durable et inclusif
+          </p>
+
+          {/* Enhanced CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <button className="btn-mining text-lg px-10 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 animate-bounce shadow-2xl">
+              <Group className="w-5 h-5 inline mr-2" />
+              S'engager avec nous
+            </button>
+            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl">
+              <BookOpen className="w-5 h-5 inline mr-2" />
+              Découvrir nos programmes
+            </button>
+          </div>
+
+          {/* Statistics Cards with Icons */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Group className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
+              <div className="text-4xl font-bold mb-2 text-yellow-400">500+</div>
+              <div className="text-lg font-medium">Femmes formées</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
+              <BookOpen className="w-12 h-12 mx-auto mb-4 text-blue-400" />
+              <div className="text-4xl font-bold mb-2 text-blue-400">15</div>
+              <div className="text-lg font-medium">Programmes actifs</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
+              <MapPin className="w-12 h-12 mx-auto mb-4 text-green-400" />
+              <div className="text-4xl font-bold mb-2 text-green-400">8</div>
+              <div className="text-lg font-medium">Provinces clés</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Network className="w-12 h-12 mx-auto mb-4 text-purple-400" />
+              <div className="text-4xl font-bold mb-2 text-purple-400">1</div>
+              <div className="text-lg font-medium">Réseau international</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+}
