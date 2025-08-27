@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://women-mining-drc.netlify.app/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/wimdrc-logo.png</image:loc>
+      <image:title>Women in Mining DRC Logo</image:title>
+      <image:caption>Logo de l'organisation Women in Mining DRC</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Program Pages -->
+  <url>
+    <loc>https://women-mining-drc.netlify.app/programmes/formation-technique</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/women-mining-leadership.jpg</image:loc>
+      <image:title>Formation Technique - WIM DRC</image:title>
+      <image:caption>Programme de formation technique pour les femmes dans le secteur minier</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://women-mining-drc.netlify.app/programmes/leadership</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/women-mining-leadership.jpg</image:loc>
+      <image:title>Programme Leadership - WIM DRC</image:title>
+      <image:caption>Programme de développement du leadership féminin</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://women-mining-drc.netlify.app/programmes/entrepreneuriat</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/women-mining-leadership.jpg</image:loc>
+      <image:title>Programme Entrepreneuriat - WIM DRC</image:title>
+      <image:caption>Programme d'entrepreneuriat pour les femmes dans le secteur minier</image:caption>
+    </image:image>
+  </url>
+
+  <!-- News Articles -->
+  <url>
+    <loc>https://women-mining-drc.netlify.app/news/assemblee-generale-constitutive-de-wim-ac-a-yaounde-cameroun</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Women in Mining DRC</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-30</news:publication_date>
+      <news:title>Assemblée Générale Constitutive de WIM-AC à Yaoundé, Cameroun</news:title>
+      <news:keywords>WIM-AC, Assemblée Générale, Cameroun, Yaoundé, Women in Mining, Afrique Centrale</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/Picture1.png</image:loc>
+      <image:title>Assemblée Générale WIM-AC Yaoundé</image:title>
+      <image:caption>Création historique de Women in Mining - Afrique Centrale</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://women-mining-drc.netlify.app/news/mission-a-kibali-gold-formation-et-certification-de-50-femmes-dans-les-domaines-de-la-securite-et-de-l-utilisation-d-equipements-miniers</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/WhatsApp%20Image%202025-06-27%20at%2010.05.37.jpeg</image:loc>
+      <image:title>Mission Kibali Gold - Formation des Femmes</image:title>
+      <image:caption>Formation et certification de 50 femmes à Kibali Gold</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://women-mining-drc.netlify.app/news/succes-des-cooperatives-minieres-dirigees-par-des-femmes</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://women-mining-drc.netlify.app/news/wim-drc-a-la-2e-edition-du-forum-industrie-universite</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://women-mining-drc.netlify.app/attached_assets/PHOTO-2025-06-05-15-28-04.jpg</image:loc>
+      <image:title>WIM DRC Forum Industrie-Université</image:title>
+      <image:caption>Participation de WIM DRC au Forum Industrie-Université</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

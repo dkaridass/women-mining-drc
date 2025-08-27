@@ -1,0 +1,62 @@
+# Netlify Headers for Security and Performance
+
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'
+  
+  # Performance Headers
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static Assets - Long Cache
+/attached_assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+# Images - Medium Cache
+/*.jpg
+  Cache-Control: public, max-age=2592000
+/*.jpeg
+  Cache-Control: public, max-age=2592000
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.webp
+  Cache-Control: public, max-age=2592000
+
+# Videos - Long Cache
+/*.mp4
+  Cache-Control: public, max-age=31536000
+
+# Documents - Medium Cache
+/*.pdf
+  Cache-Control: public, max-age=2592000
+  Content-Disposition: inline
+
+# Fonts - Long Cache
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  
+# API Routes - No Cache
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# HTML - Short Cache
+/*.html
+  Cache-Control: public, max-age=3600
+  
+# Manifest and Service Worker - Short Cache
+/manifest.json
+  Cache-Control: public, max-age=3600
+  
+# Sitemap - Daily Cache
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  
+# Robots - Daily Cache  
+/robots.txt
+  Cache-Control: public, max-age=86400

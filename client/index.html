@@ -56,7 +56,126 @@
     
     <!-- Additional SEO -->
     <link rel="canonical" href="https://women-mining-drc.netlify.app" />
-    <meta name="google-site-verification" content="" />
+    <meta name="google-site-verification" content="your-google-search-console-verification-code" />
+    
+    <!-- Structured Data (JSON-LD) for Rich Search Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Women in Mining DRC",
+      "alternateName": "WIM DRC",
+      "description": "Organisation dédiée à l'autonomisation des femmes dans le secteur minier de la République Démocratique du Congo pour un développement durable et inclusif",
+      "url": "https://women-mining-drc.netlify.app",
+      "logo": "https://women-mining-drc.netlify.app/attached_assets/wimdrc-logo.png",
+      "image": "https://women-mining-drc.netlify.app/attached_assets/women-mining-leadership.jpg",
+      "foundingDate": "2018",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "République Démocratique du Congo"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "République Démocratique du Congo"
+      },
+      "knowsAbout": [
+        "Formation technique minière",
+        "Leadership féminin",
+        "Entrepreneuriat minier",
+        "Autonomisation des femmes",
+        "Secteur minier",
+        "Développement durable"
+      ],
+      "sameAs": [
+        "https://women-mining-drc.netlify.app"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+243-991-900-624",
+        "contactType": "Customer Service",
+        "availableLanguage": "French"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CD",
+        "addressRegion": "République Démocratique du Congo"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Women in Mining Global Network"
+      }
+    }
+    </script>
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Women in Mining DRC",
+      "url": "https://women-mining-drc.netlify.app",
+      "description": "Site officiel de Women in Mining DRC - Organisation pour l'autonomisation des femmes dans le secteur minier",
+      "inLanguage": "fr-FR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://women-mining-drc.netlify.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Educational Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Women in Mining DRC",
+      "description": "Formation et développement des compétences pour les femmes dans le secteur minier",
+      "url": "https://women-mining-drc.netlify.app",
+      "logo": "https://women-mining-drc.netlify.app/attached_assets/wimdrc-logo.png",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certification en Techniques Minières",
+          "description": "Formation spécialisée en techniques minières, sécurité, et utilisation d'équipements modernes"
+        },
+        {
+          "@type": "EducationalOccupationalCredential", 
+          "name": "Certification en Leadership",
+          "description": "Développement des compétences en leadership pour les femmes"
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Course",
+          "name": "Formation Technique",
+          "description": "Programmes de formation spécialisés en techniques minières",
+          "provider": {
+            "@type": "Organization",
+            "name": "Women in Mining DRC"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Programme Leadership",
+          "description": "Développement des compétences en leadership",
+          "provider": {
+            "@type": "Organization",
+            "name": "Women in Mining DRC"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Programme Entrepreneuriat",
+          "description": "Accompagnement dans la création d'entreprises minières",
+          "provider": {
+            "@type": "Organization",
+            "name": "Women in Mining DRC"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

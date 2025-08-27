@@ -1,0 +1,53 @@
+# Netlify Redirects for WIM DRC
+
+# SPA Fallback - Handle client-side routing
+/*    /index.html   200
+
+# SEO-Friendly Redirects
+/about              /                    301
+/home               /                    301
+/accueil            /                    301
+
+# Program Redirects (Alternative URLs)
+/formation          /programmes/formation-technique    301
+/leadership         /programmes/leadership             301
+/entrepreneur       /programmes/entrepreneuriat        301
+/programs/*         /programmes/:splat                 301
+
+# News Redirects (Alternative URLs)
+/actualites         /#news               301
+/articles           /#news               301
+/blog               /#news               301
+
+# Contact Redirects
+/contact            /#contact            301
+/nous-contacter     /#contact            301
+
+# Legacy URL Support (if migrating from old site)
+/old-site/*         /                    301
+/wp-content/*       /attached_assets/    301
+
+# External Redirects (if needed)
+# /facebook         https://facebook.com/wimdrc       301
+# /linkedin         https://linkedin.com/company/wimdrc  301
+
+# Force HTTPS
+http://women-mining-drc.netlify.app/*    https://women-mining-drc.netlify.app/:splat    301!
+
+# Handle common misspellings/variations
+/wim-drc            /                    301
+/wimdrc             /                    301
+/women-mining       /                    301
+/femmes-mining      /                    301
+
+# API Fallbacks (if API routes don't exist)
+/api/health         /.netlify/functions/api    200
+/api/*              /.netlify/functions/api    200
+
+# File Extensions - Remove if accidentally added
+/*.html             /:splat              301
+/*.php              /                    301
+
+# Trailing Slash Normalization
+/programmes/        /programmes          301
+/news/              /news                301
