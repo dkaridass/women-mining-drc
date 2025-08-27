@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Assemblée Générale Annuelle WIM DRC 2025",
+    "date": "15 décembre 2025",
+    "time": "09:00",
+    "location": "Hôtel Karavia, Lubumbashi",
+    "description": "Assemblée générale annuelle pour faire le bilan des activités 2025 et planifier les objectifs 2026.",
+    "type": "meeting",
+    "image": "/attached_assets/wimdrc-logo.png",
+    "registrationLink": "https://forms.gle/example",
+    "isPast": false
+  },
+  {
+    "id": 2,
+    "title": "Formation en Leadership Féminin",
+    "date": "20 novembre 2025",
+    "time": "08:30",
+    "location": "Centre de Formation WIM DRC, Kolwezi",
+    "description": "Formation intensive de 3 jours sur le leadership féminin dans le secteur minier.",
+    "type": "training",
+    "image": "/attached_assets/2.jpg",
+    "registrationLink": "https://forms.gle/example2",
+    "isPast": false
+  }
+]
