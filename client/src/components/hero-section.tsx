@@ -7,7 +7,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         {/* Static background image for immediate loading */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          id="hero-bg-image"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
           style={{
             backgroundImage: 'url(/attached_assets/women-mining-leadership.jpg)'
           }}
@@ -24,7 +25,12 @@ export default function HeroSection() {
           poster="/attached_assets/women-mining-leadership.jpg"
           onLoadedData={(e) => {
             const video = e.target as HTMLVideoElement;
+            const bgImage = document.getElementById('hero-bg-image');
             video.classList.add('loaded');
+            // Hide background image when video loads
+            if (bgImage) {
+              bgImage.style.opacity = '0';
+            }
           }}
         >
           <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
