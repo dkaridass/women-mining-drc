@@ -3,38 +3,26 @@ import { Group, BookOpen, MapPin, Network } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with optimized loading */}
+      {/* Video Background Only */}
       <div className="absolute inset-0 z-0">
-        {/* Static background image for immediate loading */}
-        <div 
-          id="hero-bg-image"
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
-          style={{
-            backgroundImage: 'url(/attached_assets/women-mining-leadership.jpg)'
-          }}
-        ></div>
-        
-        {/* Video overlay for desktop/tablet - loads after image */}
+        {/* Video background */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
-          className="w-full h-full object-cover opacity-0 video-fade-in"
+          preload="auto"
+          className="w-full h-full object-cover"
           poster="/attached_assets/women-mining-leadership.jpg"
-          onLoadedData={(e) => {
-            const video = e.target as HTMLVideoElement;
-            const bgImage = document.getElementById('hero-bg-image');
-            video.classList.add('loaded');
-            // Hide background image when video loads
-            if (bgImage) {
-              bgImage.style.opacity = '0';
-            }
-          }}
         >
           <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
-          {/* Fallback to static image */}
+          {/* Fallback for browsers that don't support video */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(/attached_assets/women-mining-leadership.jpg)'
+            }}
+          ></div>
         </video>
 
         {/* Enhanced gradient overlay */}
