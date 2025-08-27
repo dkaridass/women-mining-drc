@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://women-mining-drc.netlify.app/sitemap.xml
+
+# Disallow unnecessary files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: *.json$
+Disallow: /vite.config.ts
+Disallow: /package.json
+
+# Allow important pages
+Allow: /
+Allow: /news/
+Allow: /programmes/
