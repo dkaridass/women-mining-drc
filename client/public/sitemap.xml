@@ -15,6 +15,11 @@
       <image:title>Women in Mining DRC Logo</image:title>
       <image:caption>Logo de l'organisation Women in Mining DRC</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://wim-drc.com/favicon.ico</image:loc>
+      <image:title>WIM DRC Favicon</image:title>
+      <image:caption>Favicon officiel de Women in Mining DRC</image:caption>
+    </image:image>
   </url>
 
   <!-- Program Pages -->
