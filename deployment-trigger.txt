@@ -1,3 +1,3 @@
-DEBUG DEPLOYMENT - Thu Sep 11 14:25:00 CAT 2025
-Added debugging to news section
-Check browser console for article count
+FINAL FIX - Thu Sep 11 14:30:00 CAT 2025
+All 6 articles confirmed in build
+Clean deployment without debug code

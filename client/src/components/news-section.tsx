@@ -42,10 +42,6 @@ export default function NewsSection() {
           parseDate(b.date).getTime() - parseDate(a.date).getTime()
         );
         
-        console.log('Fetched articles:', articles.length);
-        console.log('Sorted articles:', sortedArticles.length);
-        console.log('Articles:', sortedArticles.map(a => a.title));
-        
         setNews(sortedArticles);
       } catch (error) {
         console.error('Error fetching news:', error);
@@ -83,9 +79,6 @@ export default function NewsSection() {
             Restez informé des dernières avancées dans l'autonomisation des femmes 
             dans le secteur minier et des actualités du secteur.
           </p>
-          <div className="mt-4 p-4 bg-blue-100 rounded-lg">
-            <p className="text-blue-800 font-medium">DEBUG: {news.length} articles chargés</p>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
