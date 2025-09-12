@@ -1,3 +1,3 @@
-FINAL FIX - Thu Sep 11 14:30:00 CAT 2025
-All 6 articles confirmed in build
-Clean deployment without debug code
+FESTIVAL THAMANI IMAGES ADDED - Thu Sep 11 14:35:00 CAT 2025
+Updated Festival Thamani article with correct image
+All 17 festival images now available
