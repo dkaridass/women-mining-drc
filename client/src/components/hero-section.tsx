@@ -9,10 +9,11 @@ export default function HeroSection() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/attached_assets/femmes-mineures-casques.jpg)',
+            backgroundImage: 'url(/attached_assets/ femmes-mineures-casques.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            minHeight: '500px'
           }}
         ></div>
 
@@ -54,7 +55,7 @@ export default function HeroSection() {
               <Group className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-yellow-400 animate-float" />
               <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-yellow-400 animate-counter">1000+</div>
               <div className="text-sm md:text-lg font-medium">Femmes autonomisées</div>
-              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Depuis 2018</div>
+              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Depuis 2019</div>
             </div>
             <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
               <BookOpen className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-blue-400 animate-float" style={{animationDelay: '0.5s'}} />
