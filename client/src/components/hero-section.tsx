@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/attached_assets/femmes-mineures-casques.png)',
+            backgroundImage: 'url(/attached_assets/jourI1 2.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',

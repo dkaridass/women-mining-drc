@@ -125,7 +125,7 @@ export default function HomePage() {
               </div>
               <div>
                 <img
-                  src="/attached_assets/festival1.jpeg"
+                  src="/attached_assets/galerie/wim-2024/jourI9 2.jpg"
                   alt="Leadership féminin dans le secteur minier"
                   className="w-full rounded-2xl shadow-2xl"
                 />
@@ -280,7 +280,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <img
-                    src="/attached_assets/PHOTO-2025-06-05-15-28-04.jpg"
+                    src="/attached_assets/galerie/wim-2024/jourDeux4.jpg"
                     alt="Conférence Nationale WIM DRC - Alternatives socio-économiques à l'exploitation artisanale"
                     className="w-full h-auto object-cover"
                     loading="lazy"
