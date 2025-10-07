@@ -6,6 +6,7 @@ import NewsArticlePage from './pages/news-article';
 import FormationTechniquePage from './pages/formation-technique';
 import LeadershipPage from './pages/leadership';
 import EntrepreneuriatPage from './pages/entrepreneuriat';
+import GalleryWIM2024Page from './pages/gallery-wim-2024';
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/programmes/formation-technique" component={FormationTechniquePage} />
           <Route path="/programmes/leadership" component={LeadershipPage} />
           <Route path="/programmes/entrepreneuriat" component={EntrepreneuriatPage} />
+          <Route path="/galerie/wim-2024" component={GalleryWIM2024Page} />
         </Router>
       </QueryClientProvider>
     </HelmetProvider>

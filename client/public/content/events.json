@@ -1,26 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Assemblée Générale Annuelle WIM DRC 2025",
-    "date": "15 décembre 2025",
+    "title": "Festival Thamani, Femme de valeur (Première Édition WIM-DRC)",
+    "date": "2 et 3 mars 2023",
     "time": "09:00",
-    "location": "Hôtel Karavia, Lubumbashi",
-    "description": "Assemblée générale annuelle pour faire le bilan des activités 2025 et planifier les objectifs 2026.",
-    "type": "meeting",
-    "image": "/attached_assets/wimdrc-logo.png",
-    "registrationLink": "https://forms.gle/example",
-    "isPast": false
-  },
-  {
-    "id": 2,
-    "title": "Formation en Leadership Féminin",
-    "date": "20 novembre 2025",
-    "time": "08:30",
-    "location": "Centre de Formation WIM DRC, Kolwezi",
-    "description": "Formation intensive de 3 jours sur le leadership féminin dans le secteur minier.",
-    "type": "training",
-    "image": "/attached_assets/2.jpg",
-    "registrationLink": "https://forms.gle/example2",
-    "isPast": false
+    "location": "Kalubwe Lodge, Lubumbashi",
+    "description": "Premier festival de la WIM.DRC en partenariat avec la GIZ. L'objectif est de primer 8 organisations (entreprises minières, coopératives, institutions publiques et société civile) qui se sont distinguées dans la promotion du leadership féminin au Haut-Katanga et au Lualaba.",
+    "type": "festival",
+    "image": "/attached_assets/festival1.jpeg",
+    "registrationLink": "#",
+    "isPast": true
   }
 ]

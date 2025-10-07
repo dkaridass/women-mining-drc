@@ -3,29 +3,20 @@ import { Group, BookOpen, MapPin, Network } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background Only */}
+      {/* Image Background */}
       <div className="absolute inset-0 z-0">
-        {/* Video background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
-          poster="/attached_assets/women-mining-leadership.jpg"
-        >
-          <source src="/attached_assets/women-mining-bg-1.mp4" type="video/mp4" />
-          {/* Fallback for browsers that don't support video */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(/attached_assets/women-mining-leadership.jpg)'
-            }}
-          ></div>
-        </video>
+        {/* Background image of women miners in safety equipment */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/attached_assets/femmes-mineures-casques.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
 
-        {/* Enhanced gradient overlay */}
+        {/* Enhanced gradient overlay for better text readability */}
         <div className="absolute inset-0 hero-gradient"></div>
       </div>
 

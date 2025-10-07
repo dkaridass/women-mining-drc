@@ -19,6 +19,10 @@
 /articles           /#news               301
 /blog               /#news               301
 
+# Gallery Redirects
+/galerie            /galerie/wim-2024    301
+/gallery            /galerie/wim-2024    301
+
 # Contact Redirects
 /contact            /#contact            301
 /nous-contacter     /#contact            301

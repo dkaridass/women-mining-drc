@@ -152,9 +152,9 @@
 /* Hero section enhancements */
 .hero-gradient {
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.3) 0%, 
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0.3) 100%
+    rgba(0, 0, 0, 0.5) 0%, 
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.5) 100%
   );
 }
 
@@ -427,12 +427,12 @@ h1, h2, h3 {
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
 }
 
-/* Video loading optimization */
-.video-fade-in {
+/* Image loading optimization */
+.image-fade-in {
   transition: opacity 1s ease-in-out;
 }
 
-.video-fade-in.loaded {
+.image-fade-in.loaded {
   opacity: 1 !important;
 }
 
@@ -478,7 +478,7 @@ img {
   }
 
   /* Mobile/tablet specific optimizations */
-  video {
+  .hero-bg {
     object-position: center;
   }
 }
@@ -530,8 +530,7 @@ img {
   .animate-bounce,
   .animate-fade-in,
   .animate-counter,
-  .card-hover,
-  video {
+  .card-hover {
     animation: none !important;
     transition: none !important;
   }

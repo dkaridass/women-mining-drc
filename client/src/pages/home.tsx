@@ -7,16 +7,66 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Women in Mining DRC - Autonomiser les femmes dans le secteur minier</title>
-        <meta name="description" content="Women in Mining DRC (WIM.DRC) œuvre pour l'autonomisation des femmes dans le secteur minier de la République Démocratique du Congo." />
-        <meta property="og:title" content="Women in Mining DRC" />
-        <meta property="og:description" content="Autonomiser les femmes dans le secteur minier de la RDC" />
+        <title>Women in Mining DRC - Autonomiser les femmes dans le secteur minier congolais</title>
+        <meta name="description" content="Women in Mining DRC (WIM.DRC) œuvre pour l'autonomisation des femmes dans le secteur minier de la République Démocratique du Congo. Formation, leadership, entrepreneuriat et plaidoyer pour l'égalité des genres dans l'industrie minière." />
+        <meta name="keywords" content="Women in Mining DRC, WIM DRC, femmes secteur minier, autonomisation femmes RDC, égalité genres, formation minière, leadership féminin, entrepreneuriat minier, plaidoyer genre, République Démocratique Congo" />
+        <meta name="author" content="Women in Mining DRC" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="French" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Women in Mining DRC - Autonomiser les femmes dans le secteur minier congolais" />
+        <meta property="og:description" content="WIM.DRC œuvre pour l'autonomisation des femmes dans le secteur minier de la RDC. Formation, leadership, entrepreneuriat et plaidoyer pour l'égalité des genres." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://wim-drc.com" />
         <meta property="og:image" content="/attached_assets/wimdrc-logo.png" />
+        <meta property="og:image:alt" content="Logo Women in Mining DRC" />
+        <meta property="og:site_name" content="Women in Mining DRC" />
+        <meta property="og:locale" content="fr_FR" />
+        
+        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Women in Mining DRC" />
-        <meta name="twitter:description" content="Autonomiser les femmes dans le secteur minier de la RDC" />
+        <meta name="twitter:title" content="Women in Mining DRC - Autonomiser les femmes dans le secteur minier congolais" />
+        <meta name="twitter:description" content="WIM.DRC œuvre pour l'autonomisation des femmes dans le secteur minier de la RDC. Formation, leadership, entrepreneuriat et plaidoyer pour l'égalité des genres." />
         <meta name="twitter:image" content="/attached_assets/wimdrc-logo.png" />
+        <meta name="twitter:image:alt" content="Logo Women in Mining DRC" />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="theme-color" content="#1e40af" />
+        <meta name="msapplication-TileColor" content="#1e40af" />
+        <link rel="canonical" href="https://wim-drc.com" />
+        
+        {/* Structured Data for Organization */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Women in Mining DRC",
+              "alternateName": "WIM DRC",
+              "url": "https://wim-drc.com",
+              "logo": "https://wim-drc.com/attached_assets/wimdrc-logo.png",
+              "description": "Organisation œuvrant pour l'autonomisation des femmes dans le secteur minier de la République Démocratique du Congo",
+              "foundingDate": "2019",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "CD",
+                "addressRegion": "Haut-Katanga"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+243-991-900-624",
+                "contactType": "customer service"
+              },
+              "sameAs": [
+                "https://www.facebook.com/wimdrc",
+                "https://www.linkedin.com/company/wim-drc"
+              ]
+            }
+          `}
+        </script>
       </Helmet>
       
       <div className="min-h-screen">
@@ -31,27 +81,40 @@ export default function HomePage() {
                 À propos de WIM DRC
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Women in Mining DRC est une organisation dédiée à l'autonomisation des femmes 
-                dans le secteur minier de la République Démocratique du Congo.
+                Women in Mining DRC est une plateforme officiellement lancée en juin 2019 lors de la DRC Mining Week en présence de Madame Gety Mpanu Mpanu, DIRCABA du Président de la République et Marraine de la plateforme. Suite à cette conférence, la plateforme a été structurée en septembre 2019 pour définir son statut juridique, sa mission, sa vision et ses valeurs.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Notre Mission</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  Nous œuvrons pour créer un environnement inclusif où les femmes peuvent 
-                  pleinement participer et prospérer dans tous les aspects de l'industrie minière, 
-                  depuis l'extraction jusqu'à la gouvernance.
-                </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Notre approche holistique combine formation technique, développement du leadership, 
-                  plaidoyer politique et création de réseaux professionnels pour maximiser l'impact 
-                  de nos interventions.
+                  Nous œuvrons pour mettre fin à toutes formes de discriminations dont sont victimes les femmes du secteur minier de la RDC.
                 </p>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Notre Vision</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Notre vision est de contribuer à une RDC développée intégrant l'approche genre.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Nos Valeurs</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Nos actions sont guidées par trois valeurs fondamentales : La bonne gouvernance, l'équité, et la transparence.
+                </p>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Nos Composantes</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  La plateforme WIM-DRC est construite autour de quatre composantes pour garantir une représentation complète du secteur minier en RDC :
+                </p>
+                <ul className="text-gray-600 mb-6 leading-relaxed space-y-2">
+                  <li>• Les femmes et organisations du Secteur Minier Artisanal</li>
+                  <li>• Les femmes et organisations du Secteur Minier Industriel</li>
+                  <li>• Les femmes et organisations de la Société Civile</li>
+                  <li>• Les femmes du Secteur Public</li>
+                </ul>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 p-4 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">2018</div>
+                    <div className="text-2xl font-bold text-blue-600">2019</div>
                     <div className="text-sm text-gray-600">Année de création</div>
                   </div>
                   <div className="bg-green-50 p-4 rounded-lg">
@@ -72,10 +135,10 @@ export default function HomePage() {
             {/* Leadership Team */}
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-gray-900 mb-8">
-                Notre Équipe de Direction
+                Notre Équipe de Direction Nationale
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300">
                 <img
                   src="/attached_assets/dorothee-masele.jpg"
@@ -83,7 +146,7 @@ export default function HomePage() {
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Dorothée Masele</h4>
-                <p className="text-blue-600 font-medium mb-3">Présidente</p>
+                <p className="text-blue-600 font-medium mb-3">Présidente Nationale</p>
                 <p className="text-gray-600 text-sm">
                   Leader visionnaire avec plus de 15 ans d'expérience dans le secteur minier 
                   et le développement communautaire.
@@ -96,7 +159,7 @@ export default function HomePage() {
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Florence Kamfwa Mwema</h4>
-                <p className="text-blue-600 font-medium mb-3">Vice-présidente - Administration et Finance</p>
+                <p className="text-blue-600 font-medium mb-3">Vice-Présidente, Chargée de l'Administration et des Finances</p>
                 <p className="text-gray-600 text-sm">
                   Experte en gestion financière et administrative avec une solide expérience 
                   dans le développement organisationnel.
@@ -105,15 +168,217 @@ export default function HomePage() {
               <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300">
                 <img
                   src="/attached_assets/alphonsine.jpg"
-                  alt="Alphonsine"
+                  alt="Alphonsine Tshilefe"
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Alphonsine</h4>
-                <p className="text-blue-600 font-medium mb-3">Coordinatrice des Programmes</p>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Alphonsine Tshilefe</h4>
+                <p className="text-blue-600 font-medium mb-3">Vice-Présidente, Chargée de l'Exploitation Artisanale et Minière</p>
                 <p className="text-gray-600 text-sm">
                   Spécialiste en développement de programmes avec une expertise en formation 
                   technique et accompagnement des communautés.
                 </p>
+              </div>
+              <div className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300">
+                <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-gray-500 text-2xl font-bold">YM</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Yvette Mwanza</h4>
+                <p className="text-blue-600 font-medium mb-3">Vice-Présidente, Chargée de la Coordination des Provinces</p>
+                <p className="text-gray-600 text-sm">
+                  Experte en coordination régionale et développement des capacités provinciales 
+                  pour une meilleure représentation territoriale.
+                </p>
+              </div>
+            </div>
+
+            {/* Provincial Coordinators */}
+            <div className="mt-16">
+              <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                  Nos Coordinatrices Provinciales
+                </h3>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Représentation territoriale dans les 8 provinces de la RDC
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-blue-600 text-lg font-bold">HK</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Haut Katanga</h4>
+                  <p className="text-gray-600 text-sm font-medium">Elise Kalasa</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-green-600 text-lg font-bold">LU</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Lualaba</h4>
+                  <p className="text-gray-600 text-sm font-medium">Agnès Kabey</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-purple-600 text-lg font-bold">HU</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Haut Uele</h4>
+                  <p className="text-gray-600 text-sm font-medium">Diamante Kafuti</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-red-600 text-lg font-bold">NK</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Nord Kivu</h4>
+                  <p className="text-gray-600 text-sm font-medium">Yvette Mwanza</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-yellow-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-yellow-600 text-lg font-bold">SK</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Sud Kivu</h4>
+                  <p className="text-gray-600 text-sm font-medium">Germaine Ungaobe</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-indigo-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-indigo-600 text-lg font-bold">TA</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Tanganika</h4>
+                  <p className="text-gray-600 text-sm font-medium">Sr. Adolphine Lugamba</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-pink-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-pink-600 text-lg font-bold">KA</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Kasaï</h4>
+                  <p className="text-gray-600 text-sm font-medium">Cécile Edungu</p>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-teal-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-teal-600 text-lg font-bold">KI</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">Kinshasa</h4>
+                  <p className="text-gray-600 text-sm font-medium">Bernadette Mpundu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Conference Impact Section */}
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Notre Impact en Action
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Découvrez les femmes leaders qui transforment le secteur minier congolais à travers nos conférences et programmes d'autonomisation.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Conference Image */}
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                  <img
+                    src="/attached_assets/conference/wim-drc-national-conference-2024.jpg"
+                    alt="Conférence Nationale WIM DRC - Alternatives socio-économiques à l'exploitation artisanale"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-4 max-w-xs">
+                  <div className="text-sm text-gray-600 mb-1">Conférence Nationale 2024</div>
+                  <div className="text-lg font-bold text-blue-600">13 Femmes Leaders</div>
+                  <div className="text-sm text-gray-500">Secteur Minier Congolais</div>
+                </div>
+              </div>
+
+              {/* Impact Content */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                    Conférence Nationale WIM DRC 2024
+                  </h3>
+                  <p className="text-lg text-gray-600 mb-6">
+                    <strong>"Alternatives socio-économiques à l'exploitation artisanale"</strong>
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Cette conférence historique a rassemblé 13 femmes leaders du secteur minier congolais, 
+                    représentant la diversité et l'excellence de notre réseau. Chaque participante incarne 
+                    l'esprit de transformation et d'autonomisation que WIM DRC promeut à travers la RDC.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-lg">
+                    <div className="text-3xl font-bold text-blue-600 mb-2">13</div>
+                    <div className="text-gray-600">Femmes Leaders</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 shadow-lg">
+                    <div className="text-3xl font-bold text-purple-600 mb-2">8</div>
+                    <div className="text-gray-600">Provinces Représentées</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 shadow-lg">
+                    <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
+                    <div className="text-gray-600">Engagement Féminin</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 shadow-lg">
+                    <div className="text-3xl font-bold text-orange-600 mb-2">2024</div>
+                    <div className="text-gray-600">Année de Réalisation</div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-6 text-white">
+                  <h4 className="text-xl font-bold mb-3">Impact Mesurable</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Renforcement des capacités techniques et de leadership
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Développement d'alternatives économiques durables
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Création de réseaux professionnels solides
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Promotion de l'égalité des genres dans le secteur minier
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button 
+                    onClick={() => document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                    </svg>
+                    Voir nos Actualités
+                  </button>
+                  <button 
+                    onClick={() => window.open('/galerie/wim-2024', '_blank')}
+                    className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Galerie Photos
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -140,9 +405,12 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Formation Technique</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-4">
                   Programmes de formation spécialisés en techniques minières, sécurité, 
                   et utilisation d'équipements modernes.
+                </p>
+                <p className="text-gray-600 mb-6 text-sm">
+                  <strong>Activité récente :</strong> Formation ciblée pour l'émergence de jeunes femmes ingénieures et géologues dans l'industrie minière, notamment dans le Lualaba.
                 </p>
                 <a href="/programmes/formation-technique" className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
                   En savoir plus →
@@ -156,9 +424,12 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Leadership</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-4">
                   Développement des compétences en leadership pour permettre aux femmes 
                   d'occuper des postes de responsabilité.
+                </p>
+                <p className="text-gray-600 mb-6 text-sm">
+                  <strong>Activité récente :</strong> Développement du leadership à travers l'atelier "Impact de la COVID-19 sur les femmes" avec la participation de figures politiques et industrielles de haut niveau (Mme la DIRCABA, Vice-Gouverneurs).
                 </p>
                 <a href="/programmes/leadership" className="text-green-600 font-medium hover:text-green-800 transition-colors">
                   En savoir plus →
@@ -172,9 +443,12 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Entrepreneuriat</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-4">
                   Accompagnement dans la création et la gestion de coopératives 
                   et d'entreprises minières dirigées par des femmes.
+                </p>
+                <p className="text-gray-600 mb-6 text-sm">
+                  <strong>Activités récentes :</strong> Appui à la formalisation des activités minières artisanales en sociétés coopératives, et formation sur les notions de création d'entreprises. Formation spécifique en éducation financière pour les femmes du secteur (40 bénéficiaires).
                 </p>
                 <a href="/programmes/entrepreneuriat" className="text-purple-600 font-medium hover:text-purple-800 transition-colors">
                   En savoir plus →
@@ -191,27 +465,27 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Événements à venir
+                Événements Récents
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Participez à nos événements et formations pour développer vos compétences 
-                et élargir votre réseau professionnel.
+                Découvrez nos événements passés et les succès de nos programmes 
+                d'autonomisation des femmes dans le secteur minier.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="flex items-start justify-between mb-4">
-                  <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Assemblée Générale
+                  <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Festival
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-blue-600">15</div>
-                    <div className="text-sm text-gray-600">DÉC 2025</div>
+                    <div className="text-2xl font-bold text-purple-600">2-3</div>
+                    <div className="text-sm text-gray-600">MAR 2023</div>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Assemblée Générale Annuelle WIM DRC 2025
+                  Festival Thamani, Femme de valeur (Première Édition WIM-DRC)
                 </h3>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-gray-600">
@@ -224,51 +498,20 @@ export default function HomePage() {
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
-                    Hôtel Karavia, Lubumbashi
+                    Kalubwe Lodge, Lubumbashi
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Assemblée générale annuelle pour faire le bilan des activités 2025 
-                  et planifier les objectifs 2026.
+                  Premier festival de la WIM.DRC en partenariat avec la GIZ. L'objectif était de primer 8 organisations (entreprises minières, coopératives, institutions publiques et société civile) qui se sont distinguées dans la promotion du leadership féminin au Haut-Katanga et au Lualaba.
                 </p>
-                <button className="btn-mining px-6 py-2 rounded-lg font-medium">
-                  S'inscrire
-                </button>
-              </div>
-
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Formation
+                <div className="flex items-center justify-between">
+                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                    ✓ Événement terminé
                   </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-green-600">20</div>
-                    <div className="text-sm text-gray-600">NOV 2025</div>
-                  </div>
+                  <button className="bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                    Voir les photos
+                  </button>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Formation en Leadership Féminin
-                </h3>
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center text-gray-600">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    08:30
-                  </div>
-                  <div className="flex items-center text-gray-600">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    </svg>
-                    Centre de Formation WIM DRC, Kolwezi
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-6">
-                  Formation intensive de 3 jours sur le leadership féminin dans le secteur minier.
-                </p>
-                <button className="bg-green-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors">
-                  S'inscrire
-                </button>
               </div>
             </div>
 
@@ -331,13 +574,13 @@ export default function HomePage() {
                 </p>
                 <div className="space-y-2">
                   <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
-                    → Rapport annuel 2024 (PDF)
+                    → Rapport d'Activités 2020 (Haut-Katanga & Lualaba)
                   </a>
                   <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
-                    → Étude d'impact social (PDF)
+                    → Synthèse des Recommandations Post-COVID
                   </a>
                   <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
-                    → Analyse du secteur minier (PDF)
+                    → Rapport sur les Réglementations Minières et les Droits des Femmes
                   </a>
                 </div>
               </div>
@@ -432,26 +675,30 @@ export default function HomePage() {
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
                   <div className="space-y-4">
                     <div className="border-l-4 border-yellow-500 pl-4">
-                      <h4 className="font-semibold mb-1">Loi sur l'Égalité Minière</h4>
+                      <h4 className="font-semibold mb-1">Plaidoyer Légal et Formation aux Droits</h4>
                       <p className="text-sm text-orange-100">
-                        Contribution à la révision du code minier pour inclure des dispositions 
-                        favorables à l'emploi féminin.
+                        Organisation d'un atelier ciblé sur les réglementations minières et leurs impacts sur les droits des femmes. Cet atelier a été organisé dans le cadre du projet AfricaMaVal.
                       </p>
                     </div>
                     
                     <div className="border-l-4 border-yellow-500 pl-4">
-                      <h4 className="font-semibold mb-1">Partenariat Gouvernemental</h4>
+                      <h4 className="font-semibold mb-1">Partenariat Stratégique et Appui Financier</h4>
                       <p className="text-sm text-orange-100">
-                        Signature d'un protocole d'accord avec le Ministère des Mines pour 
-                        la promotion de l'entrepreneuriat féminin.
+                        Obtention d'un partenariat et d'un appui financier de deux ans auprès du BGR, une organisation de la Coopération Allemande.
                       </p>
                     </div>
                     
                     <div className="border-l-4 border-yellow-500 pl-4">
-                      <h4 className="font-semibold mb-1">Campagne de Sensibilisation</h4>
+                      <h4 className="font-semibold mb-1">Renforcement des Capacités Économiques</h4>
                       <p className="text-sm text-orange-100">
-                        Lancement de la campagne nationale "Femmes Mines Avenir" touchant 
-                        plus de 10,000 personnes.
+                        Réalisation d'une formation en faveur de 40 femmes sur l'éducation financière.
+                      </p>
+                    </div>
+                    
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <h4 className="font-semibold mb-1">Visibilité Internationale et Représentation</h4>
+                      <p className="text-sm text-orange-100">
+                        La Présidente Nationale, Me Dorothée Masele, a été reconduite en juin 2021 et représente désormais l'Afrique Centrale au Conseil d'Administration de l'AWIMA (Association of Women In Mining of Africa).
                       </p>
                     </div>
                   </div>
@@ -514,7 +761,7 @@ export default function HomePage() {
                     <svg className="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span>+243 XXX XXX XXX</span>
+                    <span>+243 991 900 625</span>
                   </div>
                 </div>
               </div>
