@@ -1,9 +1,54 @@
 import { Helmet } from 'react-helmet-async';
+import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation';
 import HeroSection from '../components/hero-section';
 import NewsSection from '../components/news-section';
 
 export default function HomePage() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = 5;
+
+  // Auto-play carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Update carousel position
+  useEffect(() => {
+    const slider = document.getElementById('carousel-slider');
+    if (slider) {
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    // Update dots
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.getElementById(`dot-${i}`);
+      if (dot) {
+        if (i === currentSlide) {
+          dot.className = 'w-3 h-3 rounded-full bg-blue-600 transition-all duration-300';
+        } else {
+          dot.className = 'w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300';
+        }
+      }
+    }
+  }, [currentSlide]);
+
+  const changeSlide = (direction: number) => {
+    setCurrentSlide((prev) => {
+      const newSlide = prev + direction;
+      if (newSlide < 0) return totalSlides - 1;
+      if (newSlide >= totalSlides) return 0;
+      return newSlide;
+    });
+  };
+
+  const goToSlide = (slideIndex: number) => {
+    setCurrentSlide(slideIndex);
+  };
   return (
     <>
       <Helmet>
@@ -73,6 +118,151 @@ export default function HomePage() {
         <Navigation />
         <HeroSection />
         
+        {/* Modern Carousel Section */}
+        <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Conférence Nationale WIM DRC 2024
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Découvrez les moments marquants de notre conférence historique
+              </p>
+            </div>
+
+            <div className="relative">
+              {/* Carousel Container */}
+              <div className="overflow-hidden rounded-2xl shadow-2xl">
+                <div className="flex transition-transform duration-500 ease-in-out" id="carousel-slider">
+                  {/* Slide 1 */}
+                  <div className="w-full flex-shrink-0 relative">
+                    <img
+                      src="/attached_assets/galerie/wim-2024/jourI2.jpg"
+                      alt="Cérémonie d'ouverture - Conférence Nationale WIM DRC"
+                      className="w-full h-96 object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-2xl font-bold mb-2">Cérémonie d'ouverture</h3>
+                      <p className="text-lg opacity-90">Conférence Nationale WIM DRC 2024</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 2 */}
+                  <div className="w-full flex-shrink-0 relative">
+                    <img
+                      src="/attached_assets/galerie/wim-2024/jourDeux1.jpg"
+                      alt="Sessions de travail intensives"
+                      className="w-full h-96 object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-2xl font-bold mb-2">Sessions de travail</h3>
+                      <p className="text-lg opacity-90">Formation et renforcement des capacités</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 3 */}
+                  <div className="w-full flex-shrink-0 relative">
+                    <img
+                      src="/attached_assets/galerie/wim-2024/jourTrois1.jpg"
+                      alt="Clôture officielle de la conférence"
+                      className="w-full h-96 object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-2xl font-bold mb-2">Clôture officielle</h3>
+                      <p className="text-lg opacity-90">Perspectives d'avenir et engagements</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 4 */}
+                  <div className="w-full flex-shrink-0 relative">
+                    <img
+                      src="/attached_assets/galerie/wim-2024/event1.jpg"
+                      alt="Réseautage et échanges professionnels"
+                      className="w-full h-96 object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-2xl font-bold mb-2">Réseautage professionnel</h3>
+                      <p className="text-lg opacity-90">Échanges et partenariats stratégiques</p>
+                    </div>
+                  </div>
+
+                  {/* Slide 5 */}
+                  <div className="w-full flex-shrink-0 relative">
+                    <img
+                      src="/attached_assets/galerie/wim-2024/IMG_5485.jpg"
+                      alt="Photo de groupe des participantes"
+                      className="w-full h-96 object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-2xl font-bold mb-2">Femmes leaders</h3>
+                      <p className="text-lg opacity-90">13 femmes transformant le secteur minier</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button
+                onClick={() => changeSlide(-1)}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+                id="prev-btn"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={() => changeSlide(1)}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+                id="next-btn"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Dots Indicator */}
+              <div className="flex justify-center mt-6 space-x-2">
+                <button
+                  onClick={() => goToSlide(0)}
+                  className="w-3 h-3 rounded-full bg-blue-600 transition-all duration-300"
+                  id="dot-0"
+                ></button>
+                <button
+                  onClick={() => goToSlide(1)}
+                  className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"
+                  id="dot-1"
+                ></button>
+                <button
+                  onClick={() => goToSlide(2)}
+                  className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"
+                  id="dot-2"
+                ></button>
+                <button
+                  onClick={() => goToSlide(3)}
+                  className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"
+                  id="dot-3"
+                ></button>
+                <button
+                  onClick={() => goToSlide(4)}
+                  className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"
+                  id="dot-4"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About Section */}
         <section id="about" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
