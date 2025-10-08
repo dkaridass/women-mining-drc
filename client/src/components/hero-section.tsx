@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         {/* Background image using img tag for better reliability */}
         <img 
-          src="/attached_assets/galerie/wim-2024/jourI1.jpg"
+          src="/attached_assets/ femmes-mineures-casques.png"
           alt="WIM DRC Conference"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ minHeight: '100vh' }}
