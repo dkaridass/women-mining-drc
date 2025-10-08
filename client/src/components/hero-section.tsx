@@ -5,18 +5,13 @@ export default function HeroSection() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Image Background */}
       <div className="absolute inset-0 z-0">
-        {/* Background image of women miners in safety equipment */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/attached_assets/jourI1 2.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            minHeight: '500px'
-          }}
-        ></div>
-
+        {/* Background image using img tag for better reliability */}
+        <img 
+          src="/attached_assets/galerie/wim-2024/jourI1.jpg"
+          alt="WIM DRC Conference"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ minHeight: '100vh' }}
+        />
         {/* Enhanced gradient overlay for better text readability */}
         <div className="absolute inset-0 hero-gradient"></div>
       </div>
