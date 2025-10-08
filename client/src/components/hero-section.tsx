@@ -1,76 +1,79 @@
 import { Group, BookOpen, MapPin, Network } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import AnimatedStats from './animated-stats';
 
 export default function HeroSection() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Image Background */}
+      {/* Parallax Background */}
       <div className="absolute inset-0 z-0">
-        {/* Background image using img tag for better reliability */}
         <img 
           src="/attached_assets/ femmes-mineures-casques.png"
           alt="WIM DRC Conference"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ minHeight: '100vh' }}
+          style={{ 
+            minHeight: '100vh',
+            transform: `translateY(${scrollY * 0.5}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
-        {/* Enhanced gradient overlay for better text readability */}
-        <div className="absolute inset-0 hero-gradient"></div>
+        {/* Enhanced gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"></div>
+        
+        {/* Floating particles */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-2 h-2 bg-yellow-400 rounded-full opacity-60 animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-1 h-1 bg-blue-400 rounded-full opacity-40 animate-bounce" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-50 animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-green-400 rounded-full opacity-30 animate-bounce" style={{animationDelay: '0.5s'}}></div>
+        </div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="animate-fade-in">
+          {/* Enhanced Title with Typewriter Effect */}
           <div className="flex justify-center items-center mb-6">
-            <Group className="w-8 h-8 mr-3 text-yellow-400" />
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <Group className="w-8 h-8 mr-3 text-yellow-400 animate-float" />
+            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-white to-yellow-400 bg-clip-text text-transparent animate-typewriter">
               Women in Mining DRC
             </h1>
-            <Network className="w-8 h-8 ml-3 text-yellow-400" />
+            <Network className="w-8 h-8 ml-3 text-yellow-400 animate-float" style={{animationDelay: '0.5s'}} />
           </div>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
+          {/* Enhanced Mission Text */}
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.5s'}}>
             Autonomiser les femmes dans le secteur minier de la République Démocratique du Congo
             pour un développement durable et inclusif
           </p>
 
-          {/* Enhanced CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <button className="btn-mining text-lg px-10 py-4 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 animate-bounce shadow-2xl">
-              <Group className="w-5 h-5 inline mr-2" />
-              S'engager avec nous
+          {/* Enhanced CTA Buttons with Glassmorphism */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-slide-up" style={{animationDelay: '1s'}}>
+            <button className="group relative px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-300 transform hover:scale-105 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-center justify-center text-white">
+                <Group className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                S'engager avec nous
+              </div>
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl">
-              <BookOpen className="w-5 h-5 inline mr-2" />
-              Découvrir nos programmes
+            <button className="group relative px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-300 transform hover:scale-105 shadow-2xl backdrop-blur-md bg-white/20 border-2 border-white/30 hover:bg-white/30">
+              <div className="relative flex items-center justify-center text-white">
+                <BookOpen className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                Découvrir nos programmes
+              </div>
             </button>
           </div>
 
-          {/* Enhanced Statistics Cards with Icons - Responsive */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto">
-            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
-              <Group className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-yellow-400 animate-float" />
-              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-yellow-400 animate-counter">1000+</div>
-              <div className="text-sm md:text-lg font-medium">Femmes autonomisées</div>
-              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Depuis 2019</div>
-            </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
-              <BookOpen className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-blue-400 animate-float" style={{animationDelay: '0.5s'}} />
-              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-blue-400 animate-counter" style={{animationDelay: '0.2s'}}>25</div>
-              <div className="text-sm md:text-lg font-medium">Programmes actifs</div>
-              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Formation & Leadership</div>
-            </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
-              <MapPin className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-green-400 animate-float" style={{animationDelay: '1s'}} />
-              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-green-400 animate-counter" style={{animationDelay: '0.4s'}}>12</div>
-              <div className="text-sm md:text-lg font-medium">Provinces couvertes</div>
-              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Présence nationale</div>
-            </div>
-            <div className="bg-white/15 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-8 text-center card-hover shadow-2xl border border-white/20">
-              <Network className="w-8 md:w-12 h-8 md:h-12 mx-auto mb-2 md:mb-4 text-purple-400 animate-float" style={{animationDelay: '1.5s'}} />
-              <div className="text-2xl md:text-4xl font-bold mb-1 md:mb-2 text-purple-400 animate-counter" style={{animationDelay: '0.6s'}}>5</div>
-              <div className="text-sm md:text-lg font-medium">Partenariats internationaux</div>
-              <div className="text-xs md:text-sm text-white/80 mt-1 md:mt-2">Réseau WIM Global</div>
-            </div>
-          </div>
+          {/* Enhanced Statistics Cards with Animated Counters */}
+          <AnimatedStats />
         </div>
       </div>
 
