@@ -13,6 +13,14 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
+  // Exclude old client folder from compilation
+  webpack: (config) => {
+    config.watchOptions = {
+      ...config.watchOptions,
+      ignored: ['**/client/**', '**/server/**', '**/dist/**'],
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig
