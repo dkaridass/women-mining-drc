@@ -1,0 +1,200 @@
+
+// Gallery images array:
+[
+  {
+    "src": "/images/gallery/ceremonie.webp",
+    "fallback": "/images/gallery/ceremonie.jpg",
+    "alt": "Cérémonie",
+    "label": "Cérémonie"
+  },
+  {
+    "src": "/images/gallery/formation-technique.webp",
+    "fallback": "/images/gallery/formation-technique.jpg",
+    "alt": "Formation technique",
+    "label": "Formation technique"
+  },
+  {
+    "src": "/images/gallery/generaux.webp",
+    "fallback": "/images/gallery/generaux.jpg",
+    "alt": "Généraux",
+    "label": "Généraux"
+  },
+  {
+    "src": "/images/gallery/photos-groupe.webp",
+    "fallback": "/images/gallery/photos-groupe.jpg",
+    "alt": "Photos de groupe",
+    "label": "Photos de groupe"
+  },
+  {
+    "src": "/images/gallery/presentations.webp",
+    "fallback": "/images/gallery/presentations.jpg",
+    "alt": "Présentations",
+    "label": "Présentations"
+  },
+  {
+    "src": "/images/gallery/travaux-groupe.webp",
+    "fallback": "/images/gallery/travaux-groupe.jpg",
+    "alt": "Travaux de groupe",
+    "label": "Travaux de groupe"
+  },
+  {
+    "src": "/images/gallery/IMG_5485.jpg",
+    "fallback": null,
+    "alt": "IMG 5485",
+    "label": "IMG 5485"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-05-12-17-47-40.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-05-12-17-47-40_2.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-04.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-04_2.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-05.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-06.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-07.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-07_2.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-08.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-09.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-09_2.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-11.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-12.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/PHOTO-2025-06-05-15-28-12_2.jpg",
+    "fallback": null,
+    "alt": "Photo 2025",
+    "label": "Photo 2025"
+  },
+  {
+    "src": "/images/gallery/Picture1.png",
+    "fallback": null,
+    "alt": "Picture1",
+    "label": "Picture1"
+  },
+  {
+    "src": "/images/gallery/Picture2.png",
+    "fallback": null,
+    "alt": "Picture2",
+    "label": "Picture2"
+  },
+  {
+    "src": "/images/gallery/Picture4.png",
+    "fallback": null,
+    "alt": "Picture4",
+    "label": "Picture4"
+  },
+  {
+    "src": "/images/gallery/Picture5.png",
+    "fallback": null,
+    "alt": "Picture5",
+    "label": "Picture5"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.37.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.38.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.39.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.40.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.40_1.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.41.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.42.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"
+  },
+  {
+    "src": "/images/gallery/WhatsApp_Image_2025-06-27_at_10.05.42_1.jpeg",
+    "fallback": null,
+    "alt": "WhatsApp",
+    "label": "WhatsApp"

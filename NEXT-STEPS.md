@@ -132,3 +132,4 @@ Once you run `npm run dev` and see the site at localhost:3000, you're all set!
 
 **Next:** Run `./setup-nextjs.sh` or follow the manual steps above! 🚀
 
+
